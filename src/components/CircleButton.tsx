@@ -13,7 +13,7 @@ import Touchable, {
 type Props = PlatformTouchableProps & {
   children?: string | React.ReactNode;
   disabled?: boolean;
-  loading?: boolean;
+
   style?: StyleProp<ViewStyle>;
 };
 
@@ -26,18 +26,13 @@ export default function CircleButton(props: Props) {
       </Text>
     );
   }
-  const disabled = (props.disabled ?? false) || (props.loading ?? false);
+  const disabled = props.disabled ?? false;
   return (
     <Touchable
       {...props}
       disabled={disabled}
-      style={[
-        styles.button,
-        (props.disabled || props.loading) && styles.disabled,
-        props.loading && styles.loading,
-        props.style,
-      ]}>
-      {props.loading ? <ActivityIndicator color="grey" /> : children}
+      style={[styles.button, props.disabled && styles.disabled, props.style]}>
+      {children}
     </Touchable>
   );
 }
@@ -58,9 +53,5 @@ const styles = StyleSheet.create({
   },
   disabledText: {
     color: 'grey',
-  },
-  loading: {
-    paddingTop: 12,
-    paddingBottom: 13,
   },
 });

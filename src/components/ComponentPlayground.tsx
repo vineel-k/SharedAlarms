@@ -1,5 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {SafeAreaView, StyleSheet, StatusBar, Text, View} from 'react-native';
+import {
+  SafeAreaView,
+  StyleSheet,
+  StatusBar,
+  Text,
+  View,
+  ActivityIndicator,
+} from 'react-native';
 import CheckBox from './CheckBox';
 import CircleButton from './CircleButton';
 
@@ -21,13 +28,11 @@ export default function ComponentPlayground() {
       <CircleButton>
         <Text>Button Text</Text>
       </CircleButton>
-
       <CircleButton disabled={true}>
         <Text>Button Text</Text>
       </CircleButton>
-
-      <CircleButton loading={true}>
-        <Text>Button Text</Text>
+      <CircleButton>
+        <ActivityIndicator color="grey" />
       </CircleButton>
     </View>
   );
