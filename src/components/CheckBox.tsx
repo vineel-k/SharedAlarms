@@ -5,7 +5,6 @@ type Props = {
   label: string;
   onPress?: () => void;
   checked: boolean;
-  disabled?: boolean;
   hideLabel?: boolean;
 };
 
@@ -21,9 +20,7 @@ export default function CheckBox(props: Props) {
   return (
     <TouchableHighlight
       underlayColor={'transparent'}
-      hitSlop={
-        props.disabled ? undefined : {top: 10, right: 10, bottom: 10, left: 10}
-      }
+      hitSlop={{top: 10, right: 10, bottom: 10, left: 10}}
       onPress={props.onPress}>
       <View style={styles.row}>
         {box}
