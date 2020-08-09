@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView, StyleSheet, StatusBar, Text, View} from 'react-native';
 import CheckBox from './CheckBox';
+import CircleButton from './CircleButton';
 
 const styles = StyleSheet.create({
   safeView: {
@@ -17,6 +18,17 @@ export default function ComponentPlayground() {
         label="check this"
         onPress={() => setCheck(!check)}
       />
+      <CircleButton>
+        <Text>Button Text</Text>
+      </CircleButton>
+
+      <CircleButton disabled={true}>
+        <Text>Button Text</Text>
+      </CircleButton>
+
+      <CircleButton loading={true}>
+        <Text>Button Text</Text>
+      </CircleButton>
     </View>
   );
 }

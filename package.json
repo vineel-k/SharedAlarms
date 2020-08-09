@@ -10,8 +10,10 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@types/react-native-platform-touchable": "^1.1.1",
     "react": "16.13.1",
-    "react-native": "0.63.0"
+    "react-native": "0.63.0",
+    "react-native-platform-touchable": "^1.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
