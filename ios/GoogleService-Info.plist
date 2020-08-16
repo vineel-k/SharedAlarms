@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>723197876332-ish4dl32ducpkf4km3bfl36tgl65fq86.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.723197876332-ish4dl32ducpkf4km3bfl36tgl65fq86</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD4Npjm-2LcsQ2rjs8Y7le5zGyap1Z_84g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>723197876332</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.github.vineel-k.SharedAlarms</string>
+	<key>PROJECT_ID</key>
+	<string>sharedalarms-33ddc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sharedalarms-33ddc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:723197876332:ios:45f13a4090d70d8dd9a049</string>
+	<key>DATABASE_URL</key>
+	<string>https://sharedalarms-33ddc.firebaseio.com</string>
+</dict>
+</plist>
